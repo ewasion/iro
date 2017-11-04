@@ -1,0 +1,87 @@
+/*
+  Heading color
+*/
+
+h1 {
+  color: #ffe28a;
+}
+
+/*
+  Category colors
+*/
+
+ul:nth-child(1) {
+  color: #ffbe4f;
+}
+
+ul:nth-child(2) {
+  color: #6bd2db;
+}
+
+ul:nth-child(3) {
+  color: #ebdada;
+}
+
+ul:nth-child(4) {
+  color: #e8702a;
+}
+
+ul:nth-child(5) {
+  color: #9ed670;
+}
+
+/*
+  For longest category name
+*/
+
+li:first-child {
+  width: 4em;
+}
+
+/*
+  Actual code
+*/
+
+body {
+  font-family: 'Ubuntu Mono', sans-serif;
+  background-color: #2a2a2a;
+  margin: 0;
+}
+
+h1 {
+  font-size: 8em;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  color: white;
+  display: inline-block;
+  position: relative;
+  font-size: 2em;
+}
+
+li:hover, li:first-child {
+  color: inherit;
+}
+
+li:first-child:after {
+  position: absolute;
+  right: 0;
+  content: '\000BB';
+}
+
+li:first-child, h1 {
+  pointer-events: none;
+}
+
+li:not(:first-child) + li:before {
+  content: '|';
+  margin-right: 5px;
+  color: white;
+}
