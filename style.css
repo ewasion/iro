@@ -30,7 +30,7 @@ h1 {
 /* Categories */
 
 ul:nth-child(1) {
-  color: #ffbe4f;
+  color: #9ed670;
 }
 
 ul:nth-child(2) {
@@ -46,7 +46,7 @@ ul:nth-child(4) {
 }
 
 ul:nth-child(5) {
-  color: #9ed670;
+  color: #ffbe4f;
 }
 
 
