@@ -64,6 +64,7 @@ li {
   display: inline-block;
   position: relative;
   font-size: 2em;
+  letter-spacing: normal;
 }
 
 li:hover, li:first-child {
@@ -73,15 +74,32 @@ li:hover, li:first-child {
 li:first-child:after {
   position: absolute;
   right: 0;
-  content: '\000BB';
+  content: '|';
+}
+
+ul:hover li:first-child:after {
+  font-weight: bolder;
 }
 
 li:first-child, h1 {
   pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+li:nth-child(2) {
+  margin-left: .25em;
 }
 
 li:not(:first-child) + li:before {
   content: '|';
-  margin-right: 5px;
+  margin-left: .25em;
+  margin-right: .25em;
   color: white;
+}
+
+div {
+  letter-spacing: -1em;
 }
