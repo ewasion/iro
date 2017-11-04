@@ -1,14 +1,33 @@
 /*
-  Heading color
+  Separator
 */
+
+/* Content */
+
+li:first-child:after {
+  content: '|';
+  /*content: '\000BB';*/ /* For » arrows */
+}
+
+/* Hover effects */
+
+ul:hover li:first-child:after {
+  font-weight: bolder;
+}
+
+
+
+/*
+  Colors
+*/
+
+/* Heading */
 
 h1 {
   color: #ffe28a;
 }
 
-/*
-  Category colors
-*/
+/* Categories */
 
 ul:nth-child(1) {
   color: #ffbe4f;
@@ -30,6 +49,8 @@ ul:nth-child(5) {
   color: #9ed670;
 }
 
+
+
 /*
   For longest category name
 */
@@ -37,6 +58,8 @@ ul:nth-child(5) {
 li:first-child {
   width: 4em;
 }
+
+
 
 /*
   Actual code
@@ -74,11 +97,6 @@ li:hover, li:first-child {
 li:first-child:after {
   position: absolute;
   right: 0;
-  content: '|';
-}
-
-ul:hover li:first-child:after {
-  font-weight: bolder;
 }
 
 li:first-child, h1 {
