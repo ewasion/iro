@@ -10,6 +10,7 @@ li:first-child:after {
   content: '';
   border-right: 2px solid;
   transition: border-right 50ms;
+  margin-right: .25em;
 }
 
 /* Hover effects */
