@@ -1,4 +1,14 @@
 /*
+  Spacing
+*/
+
+div {
+  --spacing: .25em;
+}
+
+
+
+/*
   Separator
 */
 
@@ -10,7 +20,7 @@ li:first-child:after {
   content: '';
   border-right: 2px solid;
   transition: border-right 50ms;
-  margin-right: .25em;
+  margin-right: var(--spacing);
 }
 
 /* Hover effects */
@@ -20,11 +30,28 @@ ul:hover li:first-child:after {
   border-right: 4px solid;
 }
 
+/* Link separator */
+
+div {
+  --link-separator: '|';
+}
 
 
 /*
   Colors
 */
+
+/* Background */
+
+body {
+  background-color: #2a2a2a;
+}
+
+/* Text */
+
+div {
+  --text-color: white;
+}
 
 /* Heading */
 
@@ -72,7 +99,6 @@ li:first-child {
 
 body {
   font-family: 'Ubuntu Mono', sans-serif;
-  background-color: #2a2a2a;
   margin: 0;
   overflow: hidden;
 }
@@ -89,7 +115,7 @@ a {
 }
 
 li {
-  color: white;
+  color: var(--text-color);
   display: inline-block;
   position: relative;
   font-size: 2em;
@@ -115,14 +141,14 @@ li:first-child, h1 {
 }
 
 li:nth-child(2) {
-  margin-left: .25em;
+  margin-left: var(--spacing);
 }
 
 li:not(:first-child) + li:before {
-  content: '|';
-  margin-left: .25em;
-  margin-right: .25em;
-  color: white;
+  content: var(--link-separator);
+  margin-left: var(--spacing);
+  margin-right: var(--spacing);
+  color: var(--text-color);
 }
 
 div {
