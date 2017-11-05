@@ -5,14 +5,18 @@
 /* Content */
 
 li:first-child:after {
-  content: '|';
+  /*content: '|';*/
   /*content: '\000BB';*/ /* For » arrows */
+  content: '';
+  border-right: 2px solid;
+  transition: border-right 50ms;
 }
 
 /* Hover effects */
 
 ul:hover li:first-child:after {
-  font-weight: bolder;
+  /*font-weight: bolder;*/
+  border-right: 4px solid;
 }
 
 
@@ -97,6 +101,7 @@ li:hover, li:first-child {
 li:first-child:after {
   position: absolute;
   right: 0;
+  height: 1em;
 }
 
 li:first-child, h1 {
