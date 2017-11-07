@@ -120,6 +120,7 @@ li {
   position: relative;
   font-size: 2em;
   letter-spacing: normal;
+  transition: color 200ms;
 }
 
 li:hover, li:first-child {
