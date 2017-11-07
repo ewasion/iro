@@ -101,6 +101,7 @@ body {
   font-family: 'Ubuntu Mono', sans-serif;
   margin: 0;
   overflow: hidden;
+  text-align: center;
 }
 
 h1 {
@@ -154,4 +155,6 @@ li:not(:first-child) + li:before {
 
 div {
   letter-spacing: -1em;
+  text-align: left;
+  display: inline-block;
 }
