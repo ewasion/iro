@@ -115,6 +115,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding-left: 0;
+}
+
 li {
   color: var(--text-color);
   display: inline-block;
