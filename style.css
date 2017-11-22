@@ -84,11 +84,11 @@ ul:nth-child(5) {
 
 
 /*
-  For longest category name
+  Amount of chars in longest category name + 1
 */
 
 li:first-child {
-  width: 4em;
+  width: 8ch;
 }
 
 
